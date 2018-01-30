@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Csak Java</string>
+    <string name="user_name">Név</string>
+    <string name="toppings_header">Feltétek</string>
+    <string name="whipped_cream">Tejszínhab</string>
+    <string name="chocolate">Csokoládé</string>
+    <string name="quantity_header">Mennyiség</string>
+    <string name="quantity">2</string>
+    <string name="order_button">Rendelés</string>
+    <string name="order_name">"Név: <xliff:g id="name" example="Amy">%s</xliff:g> "</string>
+    <string name="order_whipped_cream">Tejszínhabbal? <xliff:g id="addWhippedCream" example="true">%b</xliff:g></string>
+    <string name="order_chocolate">Csokoládéval? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
+    <string name="order_quantity">Mennyiség: <xliff:g id="quantity" example="2">%d</xliff:g></string>
+    <string name="order_total">Összesen: <xliff:g id="price" example="$10">%s</xliff:g></string>
+    <string name="thank_you">Köszönöm!</string>
+    <string name="order_subject"><xliff:g id="userName" example="Amy">%s</xliff:g> Csak Java rendelése</string>
+    <string name="decrement_warning">Legalább 1 kávét kell rendelnie!</string>
+    <string name="increment_warning">Nem rendelhet 100-nál több kávét!</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="coffee_image">kávé kép</string>
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#5E3427</item>
+        <item name="colorPrimaryDark">#49291E</item>
+        <item name="colorAccent">#c0ca33</item>
+    </style>
+
+    <style name="matchPar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="wrapCont" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="matchWrap" parent="matchPar">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout1" parent="matchPar">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dimenS</item>
+        <item name="android:paddingBottom">@dimen/dimenS</item>
+    </style>
+
+    <style name="textField" parent="matchWrap">
+        <item name="android:layout_marginBottom">@dimen/dimenS</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="heading" parent="wrapCont">
+        <item name="android:layout_marginBottom">@dimen/dimenS</item>
+        <item name="android:layout_marginTop">@dimen/dimenXS</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="checkBox" parent="wrapCont">
+        <item name="android:layout_marginBottom">@dimen/dimen0</item>
+        <item name="android:checked">false</item>
+        <item name="android:paddingLeft">@dimen/dimenM</item>
+        <item name="android:textSize">@dimen/dimenText</item>
+    </style>
+
+    <style name="button" parent="wrapCont">
+        <item name="android:layout_width">@dimen/dimenL</item>
+    </style>
+
+    <style name="quantity" parent="wrapCont">
+        <item name="android:textSize">@dimen/dimenText</item>
+        <item name="android:layout_marginLeft">@dimen/dimenXS</item>
+        <item name="android:layout_marginRight">@dimen/dimenXS</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="buttonSubmit" parent="wrapCont">
+        <item name="android:layout_marginTop">@dimen/dimenS</item>
+    </style>
+
+    <style name="bottomImg" parent="matchPar">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:padding">@dimen/dimen0</item>
+        <item name="android:scaleType">fitEnd</item>
+    </style>
+</resources>
