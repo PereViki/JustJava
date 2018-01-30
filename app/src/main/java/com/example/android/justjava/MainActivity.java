@@ -10,7 +10,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.text.NumberFormat;
 
 
@@ -51,19 +50,20 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method is called when the order button is clicked.
-    }*/
+     * }
+     */
 
     public void submitOrder(View view) {
 
         userName = userNameET.getText().toString();
         hasWhippedCream = whippedCreamCB.isChecked();
         hasChocolate = chocolateCB.isChecked();
-        price = calculatePrice(hasWhippedCream,hasChocolate);
+        price = calculatePrice(hasWhippedCream, hasChocolate);
 
         mailIntent = new Intent(Intent.ACTION_SENDTO);
         mailIntent.setData(Uri.parse("mailto:pere.viktoria@gmail.com")); // only email apps should handle this
         mailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.order_subject, userName));
-        mailIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(price,hasWhippedCream,hasChocolate,userName));
+        mailIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(price, hasWhippedCream, hasChocolate, userName));
         if (mailIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(mailIntent);
         }
@@ -90,10 +90,11 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Creates the order summary
-     * @return the text summary
-     * @param price total amount
-     * @param hasChocolate does the user want chocolate?
+     *
+     * @param price           total amount
+     * @param hasChocolate    does the user want chocolate?
      * @param hasWhippedCream does the user want whipped cream?
+     * @return the text summary
      */
 
     private String createOrderSummary(int price, boolean hasWhippedCream, boolean hasChocolate, String userName) {
@@ -108,7 +109,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method is called when the - button is clicked.
-     }*/
+     * }
+     */
 
     public void decrement(View view) {
         if (quantity > 1) {
@@ -125,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method is called when the + button is clicked.
-     }*/
+     * }
+     */
 
     public void increment(View view) {
         if (quantity < 100) {
