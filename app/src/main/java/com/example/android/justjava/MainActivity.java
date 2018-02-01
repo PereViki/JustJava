@@ -18,6 +18,7 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
+    static final String STATE_QUANTITY = "quantity";
     EditText userNameET;
     String userName;
     CheckBox whippedCreamCB;
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     CharSequence text;
     Toast toast;
     TextView quantityTextView;
-
     int quantity = 2;
     int priceCoffee = 5;
     int priceWhippedCream = 1;
@@ -45,6 +45,24 @@ public class MainActivity extends AppCompatActivity {
         whippedCreamCB = findViewById(R.id.has_whipped_cream);
         chocolateCB = findViewById(R.id.has_chocolate);
         quantityTextView = findViewById(R.id.quantity_text_view);
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        savedInstanceState.putInt(STATE_QUANTITY, quantity);
+        super.onSaveInstanceState(savedInstanceState);
+
+    }
+
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState != null) {
+            quantity = savedInstanceState.getInt(STATE_QUANTITY);
+            displayQuantity(quantity);
+        }
 
     }
 
