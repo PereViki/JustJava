@@ -31,6 +31,7 @@
     <style name="textField" parent="matchWrap">
         <item name="android:layout_marginBottom">@dimen/dimenS</item>
         <item name="android:inputType">textCapWords</item>
+        <item name="android:textSize">@dimen/dimenText</item>
     </style>
 
     <style name="heading" parent="wrapCont">
@@ -62,6 +63,7 @@
 
     <style name="buttonSubmit" parent="wrapCont">
         <item name="android:layout_marginTop">@dimen/dimenS</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="bottomImg" parent="matchPar">
