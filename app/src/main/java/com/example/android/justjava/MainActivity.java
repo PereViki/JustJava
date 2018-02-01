@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
             quantity = quantity - 1;
             displayQuantity(quantity);
         } else {
-            text = "You have to order at least 1 coffee!";
+            text = getString(R.string.decrement_error);
             duration = Toast.LENGTH_SHORT;
 
             toast = Toast.makeText(this, text, duration);
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
             quantity = quantity + 1;
             displayQuantity(quantity);
         } else {
-            text = "You cannot order more than 100 coffees!";
+            text = getString(R.string.increment_error);
             duration = Toast.LENGTH_SHORT;
 
             toast = Toast.makeText(this, text, duration);

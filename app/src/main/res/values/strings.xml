@@ -1,5 +1,4 @@
 <resources
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">Just Java</string>
@@ -26,25 +25,25 @@
     <string name="order_button">Order</string>
 
     <!-- Name label of the order summary [CHAR LIMIT = 20] -->
-    <string name="order_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g> </string>
+    <string name="order_name">Name: <xliff:g example="Amy" id="name">%s</xliff:g> </string>
 
     <!-- Whipped cream label of the order summary [CHAR LIMIT = 20] -->
-    <string name="order_whipped_cream">Add whipped cream? <xliff:g id="addWhippedCream" example="true">%b</xliff:g></string>
+    <string name="order_whipped_cream">Add whipped cream? <xliff:g example="true" id="addWhippedCream">%b</xliff:g></string>
 
     <!-- Chocolate label of the order summary [CHAR LIMIT = 20] -->
-    <string name="order_chocolate">Add chocolate? <xliff:g id="addChocolate" example="true">%b</xliff:g></string>
+    <string name="order_chocolate">Add chocolate? <xliff:g example="true" id="addChocolate">%b</xliff:g></string>
 
     <!-- Quantity label of the order summary [CHAR LIMIT = 20] -->
-    <string name="order_quantity">Quantity: <xliff:g id="quantity" example="2">%d</xliff:g></string>
+    <string name="order_quantity">Quantity: <xliff:g example="2" id="quantity">%d</xliff:g></string>
 
     <!-- Totla label of the order summary [CHAR LIMIT = 20] -->
-    <string name="order_total">Total: <xliff:g id="price" example="$10">%s</xliff:g></string>
+    <string name="order_total">Total: <xliff:g example="$10" id="price">%s</xliff:g></string>
 
     <!-- Thank you [CHAR LIMIT = 20] -->
     <string name="thank_you">Thank you!</string>
 
     <!-- Order summary e-mail subject [CHAR LIMIT = 50] -->
-    <string name="order_subject">JustJava order for <xliff:g id="userName" example="Amy">%s</xliff:g></string>
+    <string name="order_subject">JustJava order for <xliff:g example="Amy" id="userName">%s</xliff:g></string>
 
     <!-- Toast warning message for decrement at 1 [CHAR LIMIT = 50] -->
     <string name="decrement_warning">You have to order at least 1 coffee!</string>
@@ -54,4 +53,6 @@
     <string name="decrement">-</string>
     <string name="increment">+</string>
     <string name="coffee_image">coffee image</string>
+    <string name="increment_error">You cannot order more than 100 coffees!</string>
+    <string name="decrement_error">You have to order at least 1 coffee!</string>
 </resources>
